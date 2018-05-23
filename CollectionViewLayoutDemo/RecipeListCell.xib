@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+            <string>Avenir-Heavy</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipeListCell" id="Hii-4N-LXD" customClass="RecipeListCell" customModule="Gousto" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="422"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="422"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXg-WD-31l">
+                        <rect key="frame" x="0.0" y="0.0" width="360" height="422"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OaW-4g-9yR">
+                                <rect key="frame" x="10" y="10" width="340" height="402"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evq-a2-mHv">
+                                        <rect key="frame" x="0.0" y="0.0" width="340" height="402"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" image="image-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="9ot-7C-eCX" customClass="NetworkImageView" customModule="Gousto" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="-30" width="340" height="347"/>
+                                            </imageView>
+                                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ffu-In-wgW" customClass="RecipeListGradientView" customModule="CollectionViewLayoutDemo" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="252" width="340" height="65"/>
+                                            </view>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Chicken With Creamy Mushroom Sauce" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVZ-ba-ITN">
+                                                <rect key="frame" x="13" y="287" width="314" height="71.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="26"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.23921568630000001" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_clock" translatesAutoresizingMaskIntoConstraints="NO" id="sKr-De-8CN">
+                                                <rect key="frame" x="13" y="376" width="14" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="14" id="JfB-1Z-sd2"/>
+                                                    <constraint firstAttribute="height" constant="14" id="bZr-OI-k5C"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 mins " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyA-NI-2Xa">
+                                                <rect key="frame" x="37" y="368.5" width="67.5" height="27.5"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                                <color key="textColor" red="0.20000000000000001" green="0.23921568630000001" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="wyA-NI-2Xa" secondAttribute="bottom" constant="6" id="3DW-OX-4PM"/>
+                                            <constraint firstItem="wyA-NI-2Xa" firstAttribute="top" secondItem="mVZ-ba-ITN" secondAttribute="bottom" constant="10" id="7az-8K-z51"/>
+                                            <constraint firstItem="sKr-De-8CN" firstAttribute="leading" secondItem="evq-a2-mHv" secondAttribute="leading" constant="13" id="Ikm-6a-b8Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ffu-In-wgW" secondAttribute="trailing" id="LIp-Wu-OBR"/>
+                                            <constraint firstItem="9ot-7C-eCX" firstAttribute="leading" secondItem="evq-a2-mHv" secondAttribute="leading" id="N0S-F6-tm6"/>
+                                            <constraint firstItem="sKr-De-8CN" firstAttribute="centerY" secondItem="wyA-NI-2Xa" secondAttribute="centerY" id="Obr-mp-lms"/>
+                                            <constraint firstAttribute="trailing" secondItem="9ot-7C-eCX" secondAttribute="trailing" id="S94-Ws-yQ6"/>
+                                            <constraint firstItem="Ffu-In-wgW" firstAttribute="bottom" secondItem="9ot-7C-eCX" secondAttribute="bottom" id="Ski-Qk-XoP"/>
+                                            <constraint firstItem="wyA-NI-2Xa" firstAttribute="leading" secondItem="sKr-De-8CN" secondAttribute="trailing" constant="10" id="aAu-G6-nrb"/>
+                                            <constraint firstItem="Ffu-In-wgW" firstAttribute="top" secondItem="mVZ-ba-ITN" secondAttribute="top" constant="-35" id="bGA-Me-DSJ"/>
+                                            <constraint firstItem="9ot-7C-eCX" firstAttribute="top" secondItem="evq-a2-mHv" secondAttribute="top" constant="-30" id="gYf-I9-WH7"/>
+                                            <constraint firstItem="mVZ-ba-ITN" firstAttribute="leading" secondItem="evq-a2-mHv" secondAttribute="leading" constant="13" id="ghU-4n-cw2"/>
+                                            <constraint firstItem="Ffu-In-wgW" firstAttribute="leading" secondItem="evq-a2-mHv" secondAttribute="leading" id="gmX-eh-Jrj"/>
+                                            <constraint firstItem="mVZ-ba-ITN" firstAttribute="top" secondItem="evq-a2-mHv" secondAttribute="top" constant="287" id="nxq-AL-U1a"/>
+                                            <constraint firstItem="9ot-7C-eCX" firstAttribute="bottom" secondItem="mVZ-ba-ITN" secondAttribute="top" constant="30" id="pQt-Bq-h1r"/>
+                                            <constraint firstAttribute="trailing" secondItem="mVZ-ba-ITN" secondAttribute="trailing" constant="13" id="yoM-Aj-xRh"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="evq-a2-mHv" firstAttribute="leading" secondItem="OaW-4g-9yR" secondAttribute="leading" id="8yh-5b-3mi"/>
+                                    <constraint firstAttribute="trailing" secondItem="evq-a2-mHv" secondAttribute="trailing" id="ENp-vX-3Gz"/>
+                                    <constraint firstItem="evq-a2-mHv" firstAttribute="top" secondItem="OaW-4g-9yR" secondAttribute="top" id="H7W-St-GcD"/>
+                                    <constraint firstAttribute="bottom" secondItem="evq-a2-mHv" secondAttribute="bottom" id="uuM-8x-TA4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="OaW-4g-9yR" secondAttribute="bottom" constant="10" id="18A-gp-vd8"/>
+                            <constraint firstItem="OaW-4g-9yR" firstAttribute="top" secondItem="VXg-WD-31l" secondAttribute="top" constant="10" id="MNf-aj-PPC"/>
+                            <constraint firstAttribute="trailing" secondItem="OaW-4g-9yR" secondAttribute="trailing" constant="10" id="P6D-up-GeL"/>
+                            <constraint firstItem="OaW-4g-9yR" firstAttribute="leading" secondItem="VXg-WD-31l" secondAttribute="leading" constant="10" id="dIi-Jf-dnh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="VXg-WD-31l" secondAttribute="bottom" id="aoA-f8-wrT"/>
+                <constraint firstItem="VXg-WD-31l" firstAttribute="top" secondItem="Hii-4N-LXD" secondAttribute="top" id="bEZ-Zf-g78"/>
+                <constraint firstAttribute="trailing" secondItem="VXg-WD-31l" secondAttribute="trailing" id="e04-qI-VVH"/>
+                <constraint firstItem="VXg-WD-31l" firstAttribute="leading" secondItem="Hii-4N-LXD" secondAttribute="leading" id="t1j-fk-Ji5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="gl2-hA-gIj"/>
+            <size key="customSize" width="360" height="462"/>
+            <connections>
+                <outlet property="imageView" destination="9ot-7C-eCX" id="KBK-Ff-sui"/>
+                <outlet property="mainContentView" destination="evq-a2-mHv" id="uUB-7A-5bM"/>
+                <outlet property="shadowView" destination="OaW-4g-9yR" id="oUh-Aa-dJb"/>
+                <outlet property="timeImageView" destination="sKr-De-8CN" id="M0r-UU-T92"/>
+                <outlet property="timeLabel" destination="wyA-NI-2Xa" id="0qt-U3-57K"/>
+                <outlet property="titleLabel" destination="mVZ-ba-ITN" id="c0y-9H-CSu"/>
+            </connections>
+            <point key="canvasLocation" x="56" y="119"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_clock" width="12" height="12"/>
+        <image name="image-placeholder" width="375" height="210"/>
+    </resources>
+</document>
